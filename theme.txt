@@ -1,0 +1,14 @@
+Relaxed jungle theme. Cool colors and muted tones. Lots of smooth edges, 
+simple and clean text. Largely san-serif for a clean simple look. 
+The goal is smooth and flowing.
+
+We are going to take the “Select a Design”, “Archives”, and “Resources” 
+and give them one set theme, grouping them together as links.
+
+The other sections will be grouped together in the main body
+
+The grouping will be similar to http://csszengarden.com/209/page1/ but 
+the appearance will be much less pointy and sharp.
+
+The color scheme is going to be cool and somewhat reminiscent of a 
+cool misty jungle
