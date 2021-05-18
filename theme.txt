@@ -12,3 +12,6 @@ the appearance will be much less pointy and sharp.
 
 The color scheme is going to be cool and somewhat reminiscent of a 
 cool misty jungle
+
+Wireframe:
+https://wireframe.cc/9RtukT
