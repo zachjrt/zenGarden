@@ -6,7 +6,7 @@ xBackground
 
 body {
     /* this is the page background */
-    background-color: #ffffff;
+    background-color: #FDF7FA;
 }
 
 
@@ -18,9 +18,9 @@ xPatterns
 
 .cd-box {
     /* this is the container of various design elements - i.e. the 2 logo of the branding section */
-    border: 1px solid #e6e6e6;
+    border: 1px solid #A8DCD9;
     border-radius: 3px;
-    background: #ffffff;
+    background: #FDF7FA;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
     padding: 6px;
 }
@@ -33,12 +33,12 @@ xNavigation
 -------------------------------- */
 
 header {
-    background-color: #19191a;
+    background-color: #333745;
 }
 
 .cd-logo {
     /* logo box style */
-    background-color: #5f8ee4;
+    background-color: #5FBFF9;
     width: 120px;
 }
 
@@ -50,11 +50,11 @@ header {
 
 .cd-main-nav {
     /* main navigation background color - full screen on small devices */
-    background: #19191a;
+    background: #333745;
 }
 
 .cd-main-nav li a {
-    color: #ffffff;
+    color: #FDF7FA;
     border-color: #262627;
 }
 
@@ -63,23 +63,23 @@ header {
         color: #7d7d82;
     }
     .cd-main-nav li a.selected {
-        color: #ffffff;
-        box-shadow: 0 2px 0 #5f8ee4;
+        color: #FDF7FA;
+        box-shadow: 0 2px 0 #5FBFF9;
     }
     .no-touch .cd-main-nav li a:hover {
-        color: #ffffff;
+        color: #FDF7FA;
     }
 }
 
 .cd-nav-trigger span {
     /* hamburger menu */
-    background-color: #ffffff;
+    background-color: #FDF7FA;
 }
 
 .cd-nav-trigger span::before,
 .cd-nav-trigger span::after {
     /* upper and lower lines */
-    background-color: #ffffff;
+    background-color: #FDF7FA;
 }
 
 .nav-is-visible .cd-nav-trigger span {
@@ -104,13 +104,13 @@ header {
 
 .cd-download span {
     /* tooltip */
-    background: #5f8ee4;
-    color: #ffffff;
+    background: #5FBFF9;
+    color: #FDF7FA;
 }
 
 .cd-download span::before {
     /* right arrow color */
-    border-color: #5f8ee4;
+    border-color: #5FBFF9;
 }
 
 
@@ -121,13 +121,13 @@ xPage title
 -------------------------------- */
 
 main>h1 {
-    color: #19191a;
+    color: #333745;
 }
 
 @media only screen and (min-width: 1600px) {
     main>h1 {
         /* title goes into the header on big devices */
-        color: #ffffff;
+        color: #FDF7FA;
     }
 }
 
@@ -141,7 +141,7 @@ xTypography
 h1,
 h2 {
     font-family: "Open Sans", sans-serif;
-    color: #19191a;
+    color: #333745;
 }
 
 h1 {
@@ -212,7 +212,7 @@ xButtons
     border-radius: .25em;
     font-size: 1.4rem;
     font-family: "Open Sans", sans-serif;
-    color: #ffffff;
+    color: #FDF7FA;
     padding: .6em 2.2em;
     cursor: pointer;
     background: #537A5A;
@@ -249,7 +249,7 @@ xButtons
 }
 
 .no-touch .btn.btn-outline:hover {
-    color: #ffffff;
+    color: #FDF7FA;
     background: #5ea86c;
 }
 
@@ -286,9 +286,9 @@ xForm
 
 input[type=text],
 select {
-    border: 1px solid #e6e6e6;
+    border: 1px solid #A8DCD9;
     border-radius: .25em;
-    background: #ffffff;
+    background: #FDF7FA;
 }
 
 input[type=text]:focus,
@@ -307,12 +307,12 @@ input[type=text].success {
 }
 
 input[type=text].alert {
-    border-color: #e4655f;
+    border-color: #537A5A;
     box-shadow: 0 0 6px rgba(228, 101, 95, 0.2);
 }
 
 input[type=text]:focus {
-    border-color: #5f8ee4;
+    border-color: #5FBFF9;
     box-shadow: 0 0 6px rgba(95, 142, 228, 0.2);
 }
 
@@ -356,7 +356,7 @@ input[type=checkbox] {
 .radio-label::before,
 .checkbox-label::before {
     left: 0;
-    border: 1px solid #e6e6e6;
+    border: 1px solid #A8DCD9;
     box-shadow: inset 1px 1px rgba(0, 0, 0, 0.03);
 }
 
@@ -377,7 +377,7 @@ input[type=checkbox] {
 
 input[type=radio]:checked+label::before,
 input[type=checkbox]:checked+label::before {
-    background-color: #19191a;
+    background-color: #333745;
     border: none;
     box-shadow: none;
 }
@@ -935,7 +935,7 @@ section:nth-of-type(6) h2::before {
 }
 
 .cd-colors li:nth-of-type(1) .cd-color-swatch {
-    background: #5f8ee4;
+    background: #5FBFF9;
 }
 
 .cd-colors li:nth-of-type(1) .cd-color-swatch::before {
@@ -947,7 +947,7 @@ section:nth-of-type(6) h2::before {
 }
 
 .cd-colors li:nth-of-type(2) .cd-color-swatch {
-    background: #19191a;
+    background: #333745;
 }
 
 .cd-colors li:nth-of-type(2) .cd-color-swatch::before {
@@ -959,31 +959,31 @@ section:nth-of-type(6) h2::before {
 }
 
 .cd-colors li:nth-of-type(3) .cd-color-swatch {
-    background: #e4655f;
+    background: #537A5A;
 }
 
 .cd-colors li:nth-of-type(3) .cd-color-swatch::before {
-    background: #e87a75;
+    background: #758b79;
 }
 
 .cd-colors li:nth-of-type(3) .cd-color-swatch::after {
-    background: #e05049;
+    background: #3c6b45;
 }
 
 .cd-colors li:nth-of-type(4) .cd-color-swatch {
-    background: #e6e6e6;
+    background: #A8DCD9;
 }
 
 .cd-colors li:nth-of-type(4) .cd-color-swatch::before {
-    background: #f3f3f3;
+    background: #b8dbda;
 }
 
 .cd-colors li:nth-of-type(4) .cd-color-swatch::after {
-    background: #d9d9d9;
+    background: #8ac9c6;
 }
 
 .cd-colors li:nth-of-type(5) .cd-color-swatch {
-    background: #ffffff;
+    background: #FDF7FA;
 }
 
 .cd-colors li:nth-of-type(5) .cd-color-swatch::before {
@@ -1029,7 +1029,7 @@ section:nth-of-type(6) h2::before {
 
 .cd-typography h1::before {
     content: 'Aa - ';
-    color: #5f8ee4;
+    color: #5FBFF9;
 }
 
 .cd-buttons .cd-box:first-of-type {
