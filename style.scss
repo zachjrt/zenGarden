@@ -17,6 +17,10 @@
 
 
 /* basic elements */
+$water:#ccf;
+$rock:#665544;
+$mist:#fff;
+
 
 html {
     margin: 0;
@@ -218,6 +222,23 @@ footer a:visited {
     height: 110px;
 }
 
+/*Waterfall styling*/
+.water circle{
+  fill:$water;
+}
+.water line{
+  stroke:$water;
+}
+.rock line{
+  stroke:$rock;
+}
+.rock rect{
+  fill:$rock;
+}
+.mist circle{
+  fill:$mist;
+  opacity:.4;
+}
 
 /* STYLES FOR DESKTOP */
 
