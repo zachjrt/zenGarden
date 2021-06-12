@@ -20,6 +20,10 @@
 $water:#ccf;
 $rock:#665544;
 $mist:#fff;
+$dark-background:#333745;
+$primary:#537A5A;
+$secondary:#5FBFF9;
+$off-white:#FDF7FA;
 
 
 html {
@@ -31,7 +35,7 @@ body {
     font: 75% georgia, sans-serif;
     line-height: 1.88889;
     color: #555753;
-    background: #fff url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right;
+    background-color: $off-white; 
     margin: 0;
     padding: 0;
 }
@@ -79,11 +83,30 @@ abbr {
     padding: 0 175px 0 110px;
     margin: 0;
     position: relative;
+  display:grid;
+  grid-template-columns: 10% auto 10%;
+  grid-template-rows: auto auto auto auto;
 }
 
 .intro {
     min-width: 470px;
     width: 100%;
+    grid-column-start: 2;
+    grid-column-end: 3;
+   grid-row-start: 1;
+  grid-row-end: 2;
+}
+.main{
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.sidebar{
+   grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
 
 header h1 {
@@ -146,19 +169,16 @@ footer a:visited {
     margin-right: 20px;
 }
 
-.sidebar {
-    margin-left: 600px;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
 
-.sidebar .wrapper {
+
+ .wrapper {
+    display:flex;
+    flex-grow:1;
+   justify-content: space-between;
     font: 10px verdana, sans-serif;
-    background: transparent url(http://csszengarden.com/001/paper-bg.jpg) top left repeat-y;
     padding: 10px;
     margin-top: 150px;
-    width: 130px;
+   background-color: $dark-background;
 }
 
 .sidebar h3.select {
