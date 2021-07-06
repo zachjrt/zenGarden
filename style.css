@@ -7,7 +7,8 @@
 /* basic elements */
 html {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 body {
   font: 75% georgia, sans-serif;
@@ -15,71 +16,92 @@ body {
   color: #555753;
   background-color: #FDF7FA;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 p {
   margin-top: 0;
   text-align: justify;
-  font-size: 1.3em; }
+  font-size: 1.3em;
+}
 
 h3 {
   font: italic normal 1.5em georgia, sans-serif;
   letter-spacing: 1px;
   margin-bottom: 0;
   color: #5FBFF9;
-  text-align: center; }
+  text-align: center;
+}
 
 a:link {
   font-weight: bold;
   text-decoration: none;
-  color: #B7A5DF; }
+  color: #B7A5DF;
+}
 
 a:visited {
   font-weight: bold;
   text-decoration: none;
-  color: #D4CDDC; }
+  color: #D4CDDC;
+}
 
 a:hover,
 a:focus,
 a:active {
   text-decoration: underline;
-  color: #9685BA; }
+  color: #9685BA;
+}
 
 abbr {
-  border-bottom: none; }
+  border-bottom: none;
+}
 
 /* specific divs */
 .page-wrapper {
   margin: 0;
   position: relative;
+  display: -ms-grid;
   display: grid;
-  grid-template-columns: auto;
-  grid-template-rows: auto auto auto auto; }
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: auto auto auto auto;
+      grid-template-rows: auto auto auto auto;
+}
 
 .intro {
   min-width: 320px;
   width: 100%;
-  grid-column-start: 1;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
   grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2; }
+  -ms-grid-row: 1;
+      grid-row-start: 1;
+  grid-row-end: 2;
+}
 
 .main {
-  grid-column-start: 1;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
   grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3; }
+  -ms-grid-row: 2;
+      grid-row-start: 2;
+  grid-row-end: 3;
+}
 
 .sidebar {
-  grid-column-start: 1;
+  -ms-grid-column: 1;
+      grid-column-start: 1;
   grid-column-end: 2;
-  grid-row-start: 3;
-  grid-row-end: 4; }
+  -ms-grid-row: 3;
+      grid-row-start: 3;
+  grid-row-end: 4;
+}
 
 header {
   padding-top: 20px;
   position: relative;
-  z-index: 10; }
+  z-index: 10;
+}
 
 header h1 {
   margin-top: 10px;
@@ -87,7 +109,8 @@ header h1 {
   color: #537A5A;
   text-align: center;
   font-size: 2em;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
 
 header h2 {
   margin-bottom: 40px;
@@ -95,39 +118,53 @@ header h2 {
   height: 18px;
   color: #5FBFF9;
   text-align: center;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+}
 
 .summary {
   clear: both;
-  padding: 20px 20px 20px 10px; }
+  padding: 20px 20px 20px 10px;
+}
 
 .summary p {
   font: italic 1.5em/2.2 georgia;
-  text-align: center; }
+  text-align: center;
+}
 
 .preamble {
   clear: right;
-  padding: 0px 15px 0 15px; }
+  padding: 0px 15px 0 15px;
+}
 
 .supporting {
   padding: 0px 15px;
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+}
 
 footer {
-  text-align: center; }
+  text-align: center;
+}
 
 footer a:link,
 footer a:visited {
-  margin-right: 20px; }
+  margin-right: 20px;
+}
 
 .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-grow: 1;
-  justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font: 10px verdana, sans-serif;
   padding: 10px;
   margin-top: 150px;
-  background-color: #333745; }
+  background-color: #333745;
+}
 
 .sidebar h3.select {
   background: transparent url(http://csszengarden.com/001/h3.gif) no-repeat top left;
@@ -136,7 +173,8 @@ footer a:visited {
   height: 16px;
   text-indent: 100%;
   white-space: nowrap;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .sidebar h3.archives {
   background: transparent url(http://csszengarden.com/001/h5.gif) no-repeat top left;
@@ -145,7 +183,8 @@ footer a:visited {
   height: 14px;
   text-indent: 100%;
   white-space: nowrap;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .sidebar h3.resources {
   background: transparent url(http://csszengarden.com/001/h6.gif) no-repeat top left;
@@ -154,11 +193,13 @@ footer a:visited {
   height: 10px;
   text-indent: 100%;
   white-space: nowrap;
-  overflow: hidden; }
+  overflow: hidden;
+}
 
 .sidebar ul {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 .sidebar li {
   line-height: 1.3em;
@@ -166,13 +207,16 @@ footer a:visited {
   display: block;
   padding-top: 5px;
   margin-bottom: 5px;
-  list-style-type: none; }
+  list-style-type: none;
+}
 
 .sidebar li a:link {
-  color: #988F5E; }
+  color: #988F5E;
+}
 
 .sidebar li a:visited {
-  color: #B3AE94; }
+  color: #B3AE94;
+}
 
 .extra1 {
   background: transparent url(http://csszengarden.com/001/cr2.gif) top left no-repeat;
@@ -181,57 +225,72 @@ footer a:visited {
   right: 0;
   width: 148px;
   height: 110px;
-  opacity: .5; }
+  opacity: .5;
+}
 
 /*Waterfall styling*/
 .water circle {
-  fill: #ccf; }
+  fill: #ccf;
+}
 
 .water line {
-  stroke: #ccf; }
+  stroke: #ccf;
+}
 
 .rock line {
-  stroke: #665544; }
+  stroke: #665544;
+}
 
 .rock rect {
-  fill: #665544; }
+  fill: #665544;
+}
 
 .mist circle {
   fill: #fff;
-  opacity: .4; }
+  opacity: .4;
+}
 
 /* STYLES FOR DESKTOP */
 @media (min-width: 1024px) {
   .page-wrapper {
     margin: 0;
     position: relative;
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 10% auto 10%;
-    grid-template-rows: auto auto auto auto; }
-
+    -ms-grid-columns: 10% auto 10%;
+        grid-template-columns: 10% auto 10%;
+    -ms-grid-rows: auto auto auto auto;
+        grid-template-rows: auto auto auto auto;
+  }
   h3 {
-    text-align: left; }
-
+    text-align: left;
+  }
   .intro {
     min-width: 470px;
     width: 100%;
-    grid-column-start: 2;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2; }
-
+    -ms-grid-row: 1;
+        grid-row-start: 1;
+    grid-row-end: 2;
+  }
   .main {
-    grid-column-start: 2;
+    -ms-grid-column: 2;
+        grid-column-start: 2;
     grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3; }
-
+    -ms-grid-row: 2;
+        grid-row-start: 2;
+    grid-row-end: 3;
+  }
   .sidebar {
-    grid-column-start: 1;
+    -ms-grid-column: 1;
+        grid-column-start: 1;
     grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 4; }
-
+    -ms-grid-row: 3;
+        grid-row-start: 3;
+    grid-row-end: 4;
+  }
   header h1 {
     margin-top: 10px;
     display: block;
@@ -239,8 +298,8 @@ footer a:visited {
     text-indent: 100%;
     white-space: nowrap;
     color: #537A5A;
-    font-size: 3em; }
-
+    font-size: 3em;
+  }
   header h2 {
     margin-top: 58px;
     margin-bottom: 40px;
@@ -248,9 +307,10 @@ footer a:visited {
     height: 18px;
     text-indent: 100%;
     white-space: nowrap;
-    font-size: 2.5em; }
-
+    font-size: 2.5em;
+  }
   .extra1 {
-    opacity: 1; } }
-
+    opacity: 1;
+  }
+}
 /*# sourceMappingURL=style.css.map */
