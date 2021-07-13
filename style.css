@@ -225,6 +225,27 @@ footer a:visited {
   height: 400px;
 }
 
+.extra3 {
+  background-color: #5FBFF9;
+  position: absolute;
+  border-radius: 50%;
+  z-index: -3;
+  top: 380px;
+  left: -150px;
+  width: 300px;
+  height: 800px;
+}
+
+.extra4 {
+  background-color: #5FBFF9;
+  position: absolute;
+  z-index: -3;
+  top: 810px;
+  left: -150px;
+  width: 300px;
+  height: 1400px;
+}
+
 /*Waterfall styling*/
 .water circle {
   fill: #ccf;
