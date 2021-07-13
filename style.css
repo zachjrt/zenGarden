@@ -76,6 +76,10 @@ abbr {
   background-color: #FDF7FA;
 }
 
+.intro header, .summary p {
+  z-index: 3;
+}
+
 .main {
   grid-column-start: 1;
   grid-column-end: 2;
@@ -210,7 +214,7 @@ footer a:visited {
   background-color: #ffd000;
   position: absolute;
   border-radius: 50%;
-  z-index: -3;
+  z-index: 2;
   top: -380px;
   right: -330px;
   width: 800px;

@@ -112,6 +112,9 @@ abbr {
     grid-row-end: 2;
     background-color: $color-5;
 }
+.intro header, .summary p{
+    z-index: 3;
+}
 
 .main {
     grid-column-start: 1;
@@ -247,7 +250,7 @@ footer a:visited {
     background-color: rgb(255, 208, 0);
     position: absolute;
     border-radius: 50%;
-    z-index: -3;
+    z-index: 2;
     top: -380px;
     right: -330px;
     width: 800px;
