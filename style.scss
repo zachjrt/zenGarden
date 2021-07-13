@@ -46,18 +46,19 @@ html {
 }
 
 body {
-    font: 75% georgia, sans-serif;
+    font-family: $secondary-font;
     line-height: 1.88889;
     color: #555753;
-    background-color: $off-white;
+    background-color: $color-4;
     margin: 0;
     padding: 0;
 }
 
 p {
+    font-family: $primary-font;
     margin-top: 0;
     text-align: justify;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 h3 {
@@ -109,6 +110,7 @@ abbr {
     grid-column-end: 2;
     grid-row-start: 1;
     grid-row-end: 2;
+    background-color: $color-5;
 }
 
 .main {
@@ -116,6 +118,7 @@ abbr {
     grid-column-end: 2;
     grid-row-start: 2;
     grid-row-end: 3;
+    background-color: $color-5;
 }
 
 .sidebar {
@@ -255,7 +258,7 @@ footer a:visited {
 .extra2 {
     background-color: $color-1;
     z-index: -3;
-    position: relative;
+    position: absolute;
     top: -400px;
     bottom: 0px;
     width: 100%;
@@ -266,22 +269,24 @@ footer a:visited {
     position: absolute;
     border-radius: 50%;
     z-index: -3;
-    top: 380px;
+    position: fixed;
+    
+    z-index: -2;
+    bottom: 335px;
     left: -150px;
     width: 300px;
-    height: 800px;
+    height: 300px;
     
 }
 .extra4{
     background-color: $color-1;
     
-    position: absolute;
+    position: fixed;
     
     z-index: -2;
-    top: 810px;
-    left: -150px;
-    width: 300px;
-    height: 1200px;
+    bottom: 0px;
+    width: 150px;
+    height: 500px;
   
 }
 
