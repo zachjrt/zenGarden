@@ -219,18 +219,16 @@ footer a:visited {
 }
 
 .extra1 {
-  background-image: url(sun.svg);
+  background-color: rgb(255, 230, 0);
+  border-radius: 50%;
+  z-index: -3;
   position: absolute;
-  top: 40px;
-  right: 0;
-  width: 148px;
-  height: 110px;
-  opacity: .5;
+  top: -440px;
+  right: -360px;
+  width: 800px;
+  height: 800px;
 }
 
-.sun{
-  fill: rgb(223, 190, 46);
-}
 /*Waterfall styling*/
 .water circle {
   fill: #ccf;
