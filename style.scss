@@ -18,6 +18,21 @@
 
 /* basic elements */
 
+$color-1: #5FBFF9; // ocean Blue
+$color-2: #333745; // Dark Gray
+$color-3: #537A5A; // Jungle green
+$color-4: #A8DCD9; // mist blue
+$color-5: #FDF7FA; // white-ish
+// additional colors
+$success: #6fce72; // green
+$alert: #790000; // red
+// fonts
+$primary-font: 'Merriweather',
+serif;
+$secondary-font: 'Open Sans',
+sans-serif;
+
+
 $water:#ccf;
 $rock:#665544;
 $mist:#fff;
@@ -226,14 +241,26 @@ footer a:visited {
 }
 
 .extra1 {
-    background: transparent url(http://csszengarden.com/001/cr2.gif) top left no-repeat;
+    background-color: rgb(255, 208, 0);
     position: absolute;
-    top: 40px;
-    right: 0;
-    width: 148px;
-    height: 110px;
+    border-radius: 50%;
+    z-index: -3;
+    top: -380px;
+    right: -330px;
+    width: 800px;
+    height: 800px;
     opacity: .5;
 }
+
+.extra2 {
+    background-color: $color-1;
+    z-index: -3;
+    position: relative;
+    top: -400px;
+    bottom: 0px;
+    width: 100%;
+    height: 400px;
+  }
 
 
 /*Waterfall styling*/
