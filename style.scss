@@ -273,14 +273,14 @@ footer a:visited {
     
 }
 .extra4{
-    background-color: $color-1;
+    background: url(/waterfall.svg) bottom center no-repeat;
     position: absolute;
     
-    z-index: -3;
-    top: 810px;
+    z-index: 2;
+    top: 910px;
     left: -150px;
     width: 300px;
-    height: 1400px;
+    height: 1200px;
   
 }
 
