@@ -31,8 +31,6 @@ $primary-font: 'Merriweather',
 serif;
 $secondary-font: 'Open Sans',
 sans-serif;
-
-
 $water:#ccf;
 $rock:#665544;
 $mist:#fff;
@@ -52,6 +50,7 @@ body {
     background-color: $color-4;
     margin: 0;
     padding: 0;
+    overflow-x: hidden;
 }
 
 p {
@@ -112,7 +111,9 @@ abbr {
     grid-row-end: 2;
     background-color: $color-5;
 }
-.intro header, .summary p{
+
+.intro header,
+.summary p {
     z-index: 3;
 }
 
@@ -158,6 +159,8 @@ header h2 {
 .summary {
     clear: both;
     padding: 20px 20px 20px 10px;
+    position: relative;
+    z-index: 5;
 }
 
 .summary p {
@@ -167,12 +170,22 @@ header h2 {
 
 .preamble {
     clear: right;
-    padding: 0px 15px 0 15px;
+    padding: 0px 30px 0 30px;
+    position: relative;
+    z-index: 4;
 }
 
 .supporting {
-    padding: 0px 15px;
+    padding: 0px 30px;
     margin-bottom: 40px;
+}
+
+.explanation,
+.participation,
+.benefits,
+.requirements {
+    position: relative;
+    z-index: 5;
 }
 
 footer {
@@ -256,6 +269,12 @@ footer a:visited {
     width: 800px;
     height: 800px;
     opacity: .5;
+    transition: all .5s ease-in-out;
+}
+
+.extra1:hover {
+    transform: scale(2);
+    transition: all .5s ease-in-out;
 }
 
 .extra2 {
@@ -266,32 +285,37 @@ footer a:visited {
     bottom: 0px;
     width: 100%;
     height: 400px;
-  }
-.extra3{
+}
+
+.extra3 {
     background-color: $color-1;
     position: absolute;
     border-radius: 50%;
     z-index: -3;
     position: fixed;
-    
     z-index: -2;
     bottom: 335px;
     left: -150px;
     width: 300px;
     height: 300px;
-    
+    transition: all .5s ease-in-out;
+    z-index: 0;
 }
-.extra4{
+
+.extra3:hover {
+    border-radius: 0% 25% 0% 0%;
+    height: 500px;
+}
+
+.extra4 {
     background-color: $color-1;
-    
     position: fixed;
-    
     z-index: -2;
     bottom: 0px;
     width: 150px;
     height: 500px;
-  
 }
+
 
 /*Waterfall styling*/
 
@@ -370,5 +394,9 @@ footer a:visited {
     }
     .extra1 {
         opacity: 1;
+    }
+    .extra3 {
+        transition: all .5s ease-in-out;
+        z-index: 5;
     }
 }
