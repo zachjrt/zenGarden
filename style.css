@@ -5,6 +5,11 @@
 /* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 /* basic elements */
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 100%; } }
 html {
   margin: 0;
   padding: 0; }
@@ -16,7 +21,9 @@ body {
   background-color: #A8DCD9;
   margin: 0;
   padding: 0;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  position: relative;
+  max-width: 100%; }
 
 p {
   font-family: "Merriweather", serif;
@@ -29,7 +36,10 @@ h3 {
   letter-spacing: 1px;
   margin-bottom: 0;
   color: #5FBFF9;
-  text-align: center; }
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn ease-in-out 1.5s 1s forwards;
+  text-shadow: 2px 0 0 #fdf7fa, -2px 0 0 #fdf7fa, 0 2px 0 #fdf7fa, 0 -2px 0 #fdf7fa, 1px 1px #fdf7fa, -1px -1px 0 #fdf7fa, 1px -1px 0 #fdf7fa, -1px 1px 0 #fdf7fa; }
 
 a:link {
   font-weight: bold;
@@ -82,7 +92,9 @@ abbr {
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 3;
-  grid-row-end: 4; }
+  grid-row-end: 4;
+  position: relative;
+  z-index: 5; }
 
 header {
   padding-top: 20px;
@@ -95,7 +107,9 @@ header h1 {
   color: #537A5A;
   text-align: center;
   font-size: 2em;
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  opacity: 0;
+  animation: fadeIn ease-in-out 2s forwards; }
 
 header h2 {
   margin-bottom: 40px;
@@ -103,13 +117,17 @@ header h2 {
   height: 18px;
   color: #5FBFF9;
   text-align: center;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  opacity: 0;
+  animation: fadeIn ease-in-out 2s .5s forwards; }
 
 .summary {
   clear: both;
   padding: 20px 20px 20px 10px;
   position: relative;
-  z-index: 5; }
+  z-index: 5;
+  opacity: 0;
+  animation: fadeIn ease-in-out 2s .7s forwards; }
 
 .summary p {
   font: italic 1.5em/2.2 georgia;
@@ -140,12 +158,12 @@ footer a:visited {
   margin-right: 20px; }
 
 .wrapper {
-  display: flex;
+  display: grid;
   flex-grow: 1;
   justify-content: space-between;
   font: 10px verdana, sans-serif;
   padding: 10px;
-  margin-top: 150px;
+  margin-top: 0px;
   background-color: #333745; }
 
 .sidebar h3.select {
@@ -316,6 +334,15 @@ footer a:visited {
 
   .extra3 {
     transition: all .5s ease-in-out;
-    z-index: 5; } }
+    z-index: 5; }
+
+  .wrapper {
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-around;
+    font: 10px verdana, sans-serif;
+    padding: 10px;
+    margin-top: 150px;
+    background-color: #333745; } }
 
 /*# sourceMappingURL=style.css.map */
