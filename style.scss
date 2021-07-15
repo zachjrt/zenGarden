@@ -17,7 +17,7 @@
 
 
 /* basic elements */
-
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Roboto:ital,wght@0,300;1,100&display=swap');
 $color-1: #5FBFF9; // ocean Blue
 $color-2: #333745; // Dark Gray
 $color-3: #537A5A; // Jungle green
@@ -27,10 +27,11 @@ $color-5: #FDF7FA; // white-ish
 $success: #6fce72; // green
 $alert: #790000; // red
 // fonts
-$primary-font: 'Merriweather',
-serif;
-$secondary-font: 'Open Sans',
-sans-serif;
+$primary-font: 'Roboto',
+sans-serif,
+italic;
+$secondary-font: 'Amatic SC',
+cursive;
 $water:#ccf;
 $rock:#665544;
 $mist:#fff;
@@ -38,13 +39,14 @@ $dark-background:#333745;
 $primary:#537A5A;
 $secondary:#5FBFF9;
 $off-white:#FDF7FA;
+
 html {
     margin: 0;
     padding: 0;
+
 }
 
 body {
-    font-family: $secondary-font;
     line-height: 1.88889;
     color: #555753;
     background-color: $color-4;
@@ -57,12 +59,13 @@ p {
     font-family: $primary-font;
     margin-top: 0;
     text-align: justify;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 
 h3 {
-    font: italic normal 1.5em georgia, sans-serif;
-    letter-spacing: 1px;
+    font-family: $secondary-font;
+    font-size: 35px;
+    letter-spacing: 6px;
     margin-bottom: 0;
     color: $secondary;
     text-align: center;
@@ -136,24 +139,27 @@ header {
     padding-top: 20px;
     position: relative;
     z-index: 10;
-}
 
-header h1 {
-    margin-top: 10px;
-    display: block;
-    color: $primary;
-    text-align: center;
-    font-size: 2em;
-    margin-bottom: 0;
-}
 
-header h2 {
-    margin-bottom: 40px;
-    margin-top: 0;
-    height: 18px;
-    color: $secondary;
-    text-align: center;
-    font-size: 1.5em;
+    h1 {
+        margin-top: 10px;
+        display: block;
+        color: $primary;
+        text-align: center;
+        font-size: 60px;
+        margin-bottom: 0;
+        font-family: $secondary-font;
+    }
+
+    h2 {
+        font-family: $primary-font;
+        margin-bottom: 40px;
+        margin-top: 0;
+        height: 18px;
+        color: $secondary;
+        text-align: center;
+        font-size: 1.5em;
+    }
 }
 
 .summary {
@@ -161,11 +167,13 @@ header h2 {
     padding: 20px 20px 20px 10px;
     position: relative;
     z-index: 5;
-}
 
-.summary p {
-    font: italic 1.5em/2.2 georgia;
-    text-align: center;
+
+    p {
+        font-family:'Roboto' ;
+        font-style: italic ;
+        text-align: center;
+    }
 }
 
 .preamble {
@@ -351,9 +359,11 @@ footer a:visited {
         grid-template-columns: 10% auto 10%;
         grid-template-rows: auto auto auto auto;
     }
+
     h3 {
         text-align: left;
     }
+
     .intro {
         min-width: 470px;
         width: 100%;
@@ -362,18 +372,21 @@ footer a:visited {
         grid-row-start: 1;
         grid-row-end: 2;
     }
+
     .main {
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 2;
         grid-row-end: 3;
     }
+
     .sidebar {
         grid-column-start: 1;
         grid-column-end: 4;
         grid-row-start: 3;
         grid-row-end: 4;
     }
+
     header h1 {
         margin-top: 10px;
         display: block;
@@ -383,6 +396,7 @@ footer a:visited {
         color: $primary;
         font-size: 3em;
     }
+
     header h2 {
         margin-top: 58px;
         margin-bottom: 40px;
@@ -392,9 +406,11 @@ footer a:visited {
         white-space: nowrap;
         font-size: 2.5em;
     }
+
     .extra1 {
         opacity: 1;
     }
+
     .extra3 {
         transition: all .5s ease-in-out;
         z-index: 5;
