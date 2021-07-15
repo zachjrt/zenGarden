@@ -29,7 +29,7 @@ $alert: #790000; // red
 // fonts
 $primary-font: 'Roboto',
 sans-serif,
-italic;
+;
 $secondary-font: 'Amatic SC',
 cursive;
 $water:#ccf;
@@ -170,8 +170,7 @@ header {
 
 
     p {
-        font-family:'Roboto' ;
-        font-style: italic ;
+        font-family:'Roboto', italic ;
         text-align: center;
     }
 }

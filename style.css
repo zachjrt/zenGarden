@@ -21,7 +21,7 @@ body {
 }
 
 p {
-  font-family: "Roboto", sans-serif, italic;
+  font-family: "Roboto", sans-serif;
   margin-top: 0;
   text-align: justify;
   font-size: 1em;
@@ -124,7 +124,7 @@ header h1 {
 }
 
 header h2 {
-  font-family: "Roboto", sans-serif, italic;
+  font-family: "Roboto", sans-serif;
   margin-bottom: 40px;
   margin-top: 0;
   height: 18px;
@@ -141,8 +141,7 @@ header h2 {
 }
 
 .summary p {
-  font-family: 'Roboto';
-  font-style: italic;
+  font-family: 'Roboto', italic;
   text-align: center;
 }
 
