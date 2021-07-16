@@ -208,7 +208,6 @@ footer a:visited {
     display: flex;
     flex-grow: 1;
     justify-content: space-between;
-    font: 10px verdana, sans-serif;
     padding: 10px;
     margin-top: 150px;
     background-color: $dark-background;
@@ -251,7 +250,6 @@ footer a:visited {
 
 .sidebar li {
     line-height: 1.3em;
-    background: transparent url(http://csszengarden.com/001/cr1.gif) no-repeat top center;
     display: block;
     padding-top: 5px;
     margin-bottom: 5px;
@@ -259,13 +257,17 @@ footer a:visited {
 }
 
 .sidebar li a:link {
-    color: #988F5E;
+    font-family:$secondary-font;
+    font-size: 17px;
+    text-decoration-style: none;
+}
+.sidebar li a:hover {
+    color: $color-4;
 }
 
 .sidebar li a:visited {
     color: #B3AE94;
 }
-
 .extra1 {
     background-color: rgb(255, 208, 0);
     position: absolute;
