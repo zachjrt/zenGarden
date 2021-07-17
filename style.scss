@@ -18,6 +18,7 @@
 
 /* basic elements */
 
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Roboto:ital,wght@0,300;1,100&display=swap');
 $color-1: #5FBFF9; // ocean Blue
 $color-2: #333745; // Dark Gray
@@ -32,6 +33,8 @@ $primary-font: 'Roboto',
 sans-serif,
 ;
 $secondary-font: 'Amatic SC',
+cursive;
+$third-font:'Fredoka One',
 cursive;
 $water:#ccf;
 $rock:#665544;
@@ -92,6 +95,8 @@ p {
     margin-top: 0;
     text-align: justify;
     font-size: 1em;
+    opacity: 0;
+    animation: fadeIn ease-in-out 2s 1.5s forwards;
 }
 
 h3 {
@@ -137,9 +142,10 @@ abbr {
 .page-wrapper {
     margin: 0;
     position: relative;
-    display: grid;
+    display: block;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto;
+    width: 100%;
 }
 
 .intro {
@@ -183,9 +189,11 @@ header {
         text-align: center;
         font-size: 60px;
         margin-bottom: 0;
-        font-family: $primary-font;
+        font-family: $third-font;
+        font-weight: bold;
         opacity: 0;
         animation: fadeIn ease-in-out 2s forwards;
+        line-height: initial;
     }
     h2 {
         font-family: $primary-font;
@@ -253,6 +261,7 @@ footer a:visited {
     margin-top: 0px;
     background-color: $dark-background;
 }
+
 
 /*
 .sidebar h3.select {
@@ -387,6 +396,73 @@ footer a:visited {
     opacity: .4;
 }
 
+footer {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+footer a:nth-child(1) {
+    background: url(img/html5.svg);
+    background-size: 114%;
+    background-position: bottom;
+    background-position-y: -5px;
+    display: block;
+    width: 55px;
+    height: 55px;
+    color: transparent;
+    padding: 0;
+    margin-right: 10px;
+    filter: invert(26%) sepia(86%) saturate(0%) hue-rotate(61deg) brightness(109%) contrast(88%);
+}
+
+footer a:nth-child(2) {
+    background: url(img/css.svg);
+    background-size: cover;
+    display: block;
+    width: 55px;
+    height: 55px;
+    color: transparent;
+    margin-right: 10px;
+    filter: invert(26%) sepia(86%) saturate(0%) hue-rotate(61deg) brightness(109%) contrast(88%);
+}
+
+footer a:nth-child(3) {
+    background: url(img/cc.svg);
+    background-size: cover;
+    display: block;
+    width: 55px;
+    height: 55px;
+    color: transparent;
+    margin-right: 10px;
+    filter: invert(26%) sepia(86%) saturate(0%) hue-rotate(61deg) brightness(109%) contrast(88%);
+}
+
+footer a:nth-child(4) {
+    background: url(img/user.svg);
+    background-size: 90%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: block;
+    width: 55px;
+    height: 55px;
+    color: transparent;
+    margin-right: 10px;
+    filter: invert(26%) sepia(86%) saturate(0%) hue-rotate(61deg) brightness(109%) contrast(88%);
+}
+
+footer a:nth-child(5) {
+    background: url(img/github.svg);
+    background-size: cover;
+    display: block;
+    width: 55px;
+    height: 55px;
+    color: transparent;
+    margin-right: 10px;
+    filter: invert(26%) sepia(86%) saturate(0%) hue-rotate(61deg) brightness(109%) contrast(88%);
+}
+
 
 /* STYLES FOR DESKTOP */
 
@@ -424,11 +500,11 @@ footer a:visited {
     header h1 {
         margin-top: 10px;
         display: block;
-        width: 219px;
+        width: 50px;
         text-indent: 100%;
         white-space: nowrap;
-        color: $primary;
-        font-size: 3em;
+        color: #537A5A;
+        font-size: 6em;
     }
     header h2 {
         margin-top: 58px;
